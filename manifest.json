@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Playground",
+  "version": "1.0",
+  "description": "Gamified learning extension for LinkedIn",
+  "permissions": ["activeTab", "storage", "notifications"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/feed/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {"16": "icon16.png", "48": "icon48.png", "128": "icon128.png"}
+}
